@@ -1,9 +1,4 @@
-* {
-  text-align: center;
-}
-
 .navbar {
-  background-color: rgba(30, 30, 30, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -14,25 +9,84 @@
   justify-content: space-between;
   padding: 0 2rem;
   z-index: 999;
+  /*background-image: url("logo.svg");*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .menu {
   list-style-type: none;
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu li {
   margin-right: 2rem;
 }
 
+.menu li:last-child {
+  margin-right: 0;
+}
+
 .menu li a {
   color: #ffb53d;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
 }
 
 .menu li a:hover {
   color: #ffffff;
+}
+
+.page-content {
+  background-color: #1e1e1e;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.home {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.home {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.art-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  width: 300px;
+}
+
+.rectangle {
+  width: 80px;
+  height: 40px; /* Replace with your desired background color */
+  margin: 5px;
+  background-color: white;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid #1e1e1e; /* Replace with your desired background color */
+  margin: 5px;
+  color: #ffb53d;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: whitesmoke; /* Replace with your desired background color */
+  margin: 5px;
 }
